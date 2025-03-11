@@ -38,7 +38,7 @@ export default function Header() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-200 to-pink-200"
+          className="text-6xl font-bold mb-6 pb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-200 to-pink-200"
         >
           Vamshi Lagishetty
         </motion.h1>
@@ -49,7 +49,7 @@ export default function Header() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-2xl mb-12 text-purple-200"
         >
-          Software Developer | Problem Solver | Tech Enthusiast
+         Problem Solver | Tech Enthusiast | Explorer
         </motion.p>
 
         <motion.div 
