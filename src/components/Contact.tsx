@@ -17,7 +17,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:vamshishetty24@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}`;
+    window.location.href = `mailto:lagishetty.vamshi24@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}`;
   };
 
   return (
@@ -40,13 +40,13 @@ export default function Contact() {
                 <div className="space-y-4">
                   <div className="flex items-center text-gray-300">
                     <Mail className="text-purple-400 mr-3" size={20} />
-                    <a href="mailto:vamshishetty24@gmail.com" className="hover:text-purple-400 transition-colors">
-                      vamshishetty24@gmail.com
+                    <a href="mailto:lagishetty.vamshi24@gmail.com" className="hover:text-purple-400 transition-colors">
+                        lagishetty.vamshi24@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <Phone className="text-purple-400 mr-3" size={20} />
-                    <span>+91 9392909240</span>
+                    <span>+91 9985885147</span>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <MapPin className="text-purple-400 mr-3" size={20} />
@@ -58,13 +58,12 @@ export default function Contact() {
               <div className="bg-gray-800 p-6 rounded-xl">
                 <h3 className="text-2xl font-bold mb-6 text-white">Resume</h3>
                 <a
-                  href="/path-to-your-resume.pdf"
-                  download
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-colors"
-                >
-                  <Send className="mr-2" size={20} />
-                  Download Resume
-                </a>
+  href="https://drive.google.com/uc?export=download&id=1HX2XdQ_nBbQF4cq6uBc7Q02CmDkL8p3o"
+  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-colors"
+>
+  <Send className="mr-2" size={20} />
+  Download Resume
+</a>
               </div>
             </div>
 
