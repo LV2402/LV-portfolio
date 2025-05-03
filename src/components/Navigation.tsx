@@ -33,7 +33,7 @@ export default function Navigation() {
       <nav className="fixed top-0 left-0 w-full z-50 bg-gray-900/80 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <a href="#" className="text-xl font-bold text-white">VL</a>
+            <a href="#" className="text-xl font-bold text-white">LV</a>
             
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
