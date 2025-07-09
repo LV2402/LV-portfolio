@@ -58,7 +58,7 @@ export default function Contact() {
               <div className="bg-gray-800 p-6 rounded-xl">
                 <h3 className="text-2xl font-bold mb-6 text-white">Resume</h3>
                 <a
-  href="https://drive.google.com/uc?export=download&id=1HX2XdQ_nBbQF4cq6uBc7Q02CmDkL8p3o"
+  href="https://drive.google.com/file/d/1yH8yassrX5-MMrq4MGmGtd2Tkf5XhraW/view?usp=sharing"
   className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-colors"
 >
   <Send className="mr-2" size={20} />
