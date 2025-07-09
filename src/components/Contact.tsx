@@ -62,7 +62,7 @@ export default function Contact() {
   className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-colors"
 >
   <Send className="mr-2" size={20} />
-  Download Resume
+  View My Resume
 </a>
               </div>
             </div>
