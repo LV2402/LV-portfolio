@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import Tilt from "react-parallax-tilt";
 import { useSpring, animated } from "@react-spring/web";
 
@@ -10,6 +10,7 @@ interface Project {
   tech: string;
   github: string;
   color: string;
+  deployedLink?: string; // Optional deployed link
 }
 
 interface ProjectCardProps {
@@ -19,15 +20,40 @@ interface ProjectCardProps {
 
 const projects: Project[] = [
   {
+    title: "Vignana Jyothi Sahithivanam",
+    description: "MY club Website",
+    tech: "React, TypeScript, TailwindCSS",
+    github: "https://github.com/LV2402/VJSV",
+    color: "from-purple-500 to-pink-500",
+    deployedLink: "https://www.vjsahithivanam.in/", // Add your deployed link here
+  },
+  {
+    title: "Vendora",
+    description:
+      "A comprehensive vendor management system with real-time analytics and reporting.Centralized Platform for Efficient Vendor Management ",
+    tech: "MongoDB, Express.js, React, Node.js",
+    github: "https://github.com/LV2402/Vendora",
+    color: "from-purple-500 to-pink-500",
+    deployedLink: "https://vendora-rose.vercel.app/", // Add
+  },
+  {
     title: "Excelfie",
     description:
       "A secure team-based documentation platform enabling efficient report analysis and comparison. Implemented role-based authentication and optimized data handling for 50% faster query retrieval.",
-    tech: "MERN Stack",
+    tech: "MERN with excel API integration",
     github: "https://github.com/askarthikey/xcelifiee-repo",
     color: "from-purple-500 to-pink-500",
   },
   {
-    title: "Anomix",
+    title: "Vidsage",
+    description:
+      "Developed an AI-powered SEO tool leveraging Gemini API to process data from 50+ websites, enabling automated insights, content scoring, and showcasing core AI application development capabilities.",
+    tech: "Next.js, Typescript",
+    github: "https://github.com/LV2402/vidsage",
+    color: "from-purple-500 to-pink-500",
+  },
+  {
+    title: "SUMA",
     description:
       "An interactive event app supporting real-time engagement for 50+ live users via polling and analytics. Integrated Google OAuth and designed real-time charts.",
     tech: "Next.js, Node.js, MongoDB",
@@ -35,12 +61,12 @@ const projects: Project[] = [
     color: "from-blue-500 to-teal-500",
   },
   {
-    title: "Blog Platform",
+    title: "SalesLens",
     description:
-      "A blogging platform with rich text editing, user authentication, and interactive comments. Features an admin panel for managing content and users.",
-    tech: "MERN Stack",
-    github: "https://github.com/LV2402/BLOG-MERN",
-    color: "from-orange-500 to-red-500",
+      "Built a Python-based sales data analysis project using Pandas for cleaning, feature engineering, and SQL-like aggregations, and applied Matplotlib/Seaborn to visualize key business insights such as top products and sales trends.",
+    tech: "Python, Pandas, Matplotlib, Seaborn",
+    github: "https://github.com/LV2402/SalesLens",
+    color: "from-blue-500 to-teal-500",
   },
 ];
 
@@ -71,14 +97,26 @@ function ProjectCard({ project, index }: ProjectCardProps) {
             <p className="text-gray-300 mb-6">{project.description}</p>
             <div className="flex items-center justify-between">
               <span className="text-purple-400 font-medium">{project.tech}</span>
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-purple-400 transition-colors"
-              >
-                <Github size={24} />
-              </a>
+              <div className="flex gap-4">
+                {project.deployedLink && (
+                  <a
+                    href={project.deployedLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-purple-400 transition-colors"
+                  >
+                    <ExternalLink size={24} />
+                  </a>
+                )}
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-purple-400 transition-colors"
+                >
+                  <Github size={24} />
+                </a>
+              </div>
             </div>
           </div>
         </div>

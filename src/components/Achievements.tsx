@@ -54,16 +54,16 @@ export default function Achievements() {
               </div>
               <div className="grid gap-6">
                 <div className="bg-gray-900/50 p-6 rounded-lg border border-purple-500/20">
-                  <h4 className="text-xl font-semibold text-purple-300 mb-2">IUCEE</h4>
-                  <p className="text-gray-300">Active member fostering global engineering education collaboration through innovative projects and workshops</p>
-                </div>
-                <div className="bg-gray-900/50 p-6 rounded-lg border border-purple-500/20">
                   <h4 className="text-xl font-semibold text-purple-300 mb-2">Telugu Literature & Cultural Club - VJSV</h4>
                   <p className="text-gray-300">Core Member & Event Organizer, leading cultural initiatives and literary events</p>
                 </div>
                 <div className="bg-gray-900/50 p-6 rounded-lg border border-purple-500/20">
                   <h4 className="text-xl font-semibold text-purple-300 mb-2">Student Force - VJSF</h4>
                   <p className="text-gray-300">Engaged in community service initiatives, organizing social impact projects</p>
+                </div>
+                <div className="bg-gray-900/50 p-6 rounded-lg border border-purple-500/20">
+                  <h4 className="text-xl font-semibold text-purple-300 mb-2">IUCEE</h4>
+                  <p className="text-gray-300">Active member fostering global engineering education collaboration through innovative projects and workshops</p>
                 </div>
               </div>
             </div>
